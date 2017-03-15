@@ -13,8 +13,11 @@ header {
   position: fixed;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   height: 69px;
   border-bottom: 1px solid seashell;
+  z-index: 10;
+  background-color: black;
 }
 
 header img {
@@ -30,4 +33,84 @@ header nav a {
   text-decoration: underline;
   color: inherit;
   padding: 0px 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 79px;
+  text-align: center;
+  align-items: center;
+  z-index: 5;
+}
+
+#mission {
+  display: flex;
+  background-image: url("./Images/img-mission-background.jpg");
+  align-items: center;
+  height: 700px;
+  width: 1200px;
+}
+
+#mission .statement {
+  background-color: black;
+  width: 1200px;
+}
+
+#totm {
+    padding: 70px 0px;
+}
+
+.featured-tea-list {
+  display: flex;
+  width: 1000px;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.totm-tea {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.totm-tea img {
+  width: 300px;
+  height:200px;
+}
+
+.totm-tea span {
+  margin-top: 10px;
+}
+
+#locations {
+  background-image: url(./Images/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+}
+
+.location-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.location{
+  display: flex;
+  background-color: black;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 300px;
+  margin: 0px 20px;
+  opacity: 1px;
+}
+
+.location span {
+  padding: 25px 0px;
+}
+
+#contact {
+  height: 200px;
 }
